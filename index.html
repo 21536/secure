@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Enter Password</title>
+<link rel="stylesheet" href="main.css">
+<script>
+function checkPassword() {
+var password = document.getElementById("passwordBox");
+var passwordText = password.value;
+if(passwordText == "code") {
+return true;
+}
+alert("Access denied! Incorrect password!");
+return false;
+}
+</script>
+</head>
+<body>
+<h1>Secure</h1>
+<h3>Please enter the password to view the website</h3>
+<p>Password:<input id"passwordBox" type="password"/></p>
+<a class="submit" href="21536.github.io/minimu" onclick="return checkPassword();">
+Submit
+</body>
+</html>
